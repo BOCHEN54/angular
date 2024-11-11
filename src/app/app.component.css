@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% normal Arial, Helvetica, sans-serif;
+}
+
+form,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+/* Styl formularza */
+.formularz {
+  margin: 0 auto;
+  width: 450px;
+  background: #3d3939;
+  position: relative;
+  top: 40px;
+  border: 1px solid #262626;
+  padding: 10px;
+}
+
+/* Styl nagłówka */
+.formularz h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  padding: 5px 0;
+}
+
+/* Styl dla pól tekstowych */
+.formularz .wpis {
+  padding: 10px;
+  width: 180px;
+  background: #262626;
+  border: 1px double #171717;
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Styl dla listy wyboru */
+.formularz .produkt {
+  padding: 10px;
+  width: 180px;
+  border: 1px double #171717;
+  background: #262626;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Styl dla tekstu wiadomości */
+.formularz .wiadomosc {
+  padding: 7px;
+  width: 300px;
+  height: 120px;
+  background: #262626;
+  border: 1px double #171717;
+  overflow: hidden;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Styl przycisku */
+.przycisk {
+  padding: 10px 20px;
+  background-color: #171717;
+  color: #ffffff;
+  border: 1px solid #262626;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Styl etykiet */
+.formularz label {
+  display: block;
+  color: #d0dbd1;
+  padding: 10px 0;
+}
+
+.formularz label span {
+  display: block;
+  margin-bottom: 5px;
+}
