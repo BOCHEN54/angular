@@ -69,7 +69,13 @@
         [(ngModel)]="ilosc"
         min="1"
         max="5"
+        required
+        #iloscForm="ngModel"
       />
+      <!-- Komunikat, gdy wartość jest poza zakresem -->
+      <div class="alert" *ngIf="iloscForm.touched && (ilosc < 1 || ilosc > 5)">
+        Ilość jest wymagana. Wybierz liczbę między 1 a 5.
+      </div>
     </label>
 
     <label>
