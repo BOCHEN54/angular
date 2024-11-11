@@ -14,10 +14,11 @@ export class AppComponent {
   wiadomosc = 'Jesli masz uwagi,napisz';
 
   onSubmit() {
-    if (this.Imie_Nazwisko && this.email && this.produkt && this.ilosc > 0) {
-      console.log(this.Imie_Nazwisko, this.title, this.ilosc, this.email);
-    } else {
-      console.log('Formularz nie został wypełniony poprawnie');
-    }
+    console.log(`Zamówienie zostało złożone:
+        - Imię i nazwisko: ${this.Imie_Nazwisko}
+        - Email: ${this.email}
+        - Produkt: ${this.produkt}
+        - Ilość: ${this.ilosc}
+        - Wiadomość: ${this.wiadomosc}`);
   }
 }

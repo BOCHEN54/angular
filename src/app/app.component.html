@@ -82,13 +82,19 @@
       ></textarea>
     </label>
 
-    <button type="submit" class="przycisk" (click)="onSubmit()">Zamów</button>
     <button
       type="button"
       class="przycisk"
       style="background-color: red"
-      [disabled]="!formularz.form.valid"
       (click)="formularz.resetForm()"
+    >
+      Resetuj
+    </button>
+    <button
+      type="submit"
+      class="przycisk"
+      [disabled]="!formularz.form.valid"
+      (click)="onSubmit()"
     >
       Zamów
     </button>
