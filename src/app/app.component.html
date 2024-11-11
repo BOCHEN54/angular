@@ -45,7 +45,13 @@
 
     <label>
       <span>Produkt:</span>
-      <select id="produkt" class="produkt" name="produkt" [(ngModel)]="produkt">
+      <select
+        id="produkt"
+        class="produkt"
+        name="produkt"
+        [(ngModel)]="produkt"
+        required
+      >
         <option value="pralka">Pralka</option>
         <option value="telewizor">Telewizor</option>
         <option value="lodowka">Lodówka</option>
@@ -61,6 +67,8 @@
         id="ilosc"
         name="ilosc"
         [(ngModel)]="ilosc"
+        min="1"
+        max="5"
       />
     </label>
 
@@ -79,6 +87,7 @@
       type="button"
       class="przycisk"
       style="background-color: red"
+      [disabled]="!formularz.form.valid"
       (click)="formularz.resetForm()"
     >
       Zamów
