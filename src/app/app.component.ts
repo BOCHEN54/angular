@@ -3,17 +3,21 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'formularz';
   Imie_Nazwisko = '';
   email = 'prosze podac email';
   produkt = '';
-  ilosc = 0;
+  ilosc = 1;
   wiadomosc = 'Jesli masz uwagi,napisz';
 
   onSubmit() {
-    console.log(this.Imie_Nazwisko, this.title, this.ilosc);
+    if (this.Imie_Nazwisko && this.email && this.produkt && this.ilosc > 0) {
+      console.log(this.Imie_Nazwisko, this.title, this.ilosc, this.email);
+    } else {
+      console.log('Formularz nie został wypełniony poprawnie');
+    }
   }
 }
